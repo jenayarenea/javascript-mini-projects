@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stopwatch Timer</title>
+</head>
+<style>
+   @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+    * {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-weight: 300;
+        width:75%;
+        margin:auto;
+        text-align: center;
+    }
+    h1 {
+        color:#f29c13;
+        margin-top:150px;
+    }
+     .button{
+
+        padding:10px;
+        font-size:20px;
+        margin-bottom:15px;
+        background-color:#f2d70e;
+        border-radius:10px;
+        border:solid 2px #f21352;
+        color:white;
+        font-weight:bold;
+        letter-spacing: .04em;
+        width:150px;
+    }
+    #displayTime  {
+        font-size:72PX;
+    }
+    .button:hover {
+        background-color:#f21352;
+    }
+    .pink  {
+     color:#f21352;
+    }
+    .yellow {
+        color:#f2d70e;
+    }
+    .orange {
+        color:#f29c13;
+    }
+    
+</style>
+<body>
+    <h1>Stopwatch Timer</h1>
+    <h2 id="displayTime"><span class="pink" id="minutes">00</span><span class="yellow">:</span><span id="seconds" class="orange">00</span></h2>
+    <input class="button" type="button" id="startTimer" value="Start Timer" onclick=start() /><br />
+
+    <input class="button" type="button" id="stopTimer" value="Stop Timer"  onclick=stop() /><br />
+
+    <input class="button" type="button" id="resetTimer" value="Reset Timer"  onclick=reset() /><br />
+    <script src="timer.js">
+         
+    </script>
+</body>
+</html>
